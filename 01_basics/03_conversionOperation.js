@@ -157,5 +157,6 @@ console.log(+true)   // these type of code is not recommended to write
 console.log(+"")     // these type of code is not recommended to write
 
 let gameCounter = 100
-++gameCounter
-console.log(gameCounter)
+++gameCounter              // value of gameCounter = 101
+console.log(gameCounter++) // output => 101 but gameCounter value 102
+console.log(gameCounter)   // output => 102

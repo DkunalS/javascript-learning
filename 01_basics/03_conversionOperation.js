@@ -4,6 +4,7 @@ let scoreStrNum = "55kunal"
 let scoreBool = true
 let scoreNull = null
 let scoreUndefined;
+let scoreEmpty =""
 
 /*
  value of scoreNum is number but when we get the value from front end it is not guarantee that value will be number
@@ -105,3 +106,22 @@ console.log(scoreUndefinedToString)                // output => null
 let scoreUndefinedToBool = Boolean(scoreUndefined)
 console.log(typeof scoreUndefinedToBool)          // output => boolean
 console.log(scoreUndefinedToBool)                 // output => false
+
+
+// 7- empty string
+
+// Empty to String
+let scoreEmptyToString = String(scoreEmpty)
+console.log(typeof scoreEmptyToString)              // output => String
+console.log(scoreEmptyToString)                     // ouitput=> 
+
+// Empty to Number
+let scoreEmptyToNumber = Number(scoreEmpty)
+console.log(typeof scoreEmptyToNumber)              // output => number
+console.log(scoreEmptyToNumber)                     // output => 0
+
+// Empty to boolean
+let scoreEmptyToBoolean = Boolean(scoreEmpty)
+console.log(typeof scoreEmptyToBoolean)              // output => boolean
+console.log(scoreEmptyToBoolean)                     // output => false
+

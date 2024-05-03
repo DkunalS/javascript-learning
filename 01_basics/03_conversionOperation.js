@@ -10,7 +10,7 @@ let scoreEmpty =""
  value of scoreNum is number but when we get the value from front end it is not guarantee that value will be number
  e.g. req.body(scoreNum)
  */
-
+/*
  console.log(typeof scoreNum);           // output => number
  console.log(typeof scoreStr);           // output => string
  console.log(typeof scoreStrNum);        // output => string
@@ -125,3 +125,37 @@ let scoreEmptyToBoolean = Boolean(scoreEmpty)
 console.log(typeof scoreEmptyToBoolean)              // output => boolean
 console.log(scoreEmptyToBoolean)                     // output => false
 
+*/
+// Operations
+/*
+let value = 3
+let negValue = -value
+console.log(negValue)
+
+console.log(2+2)
+console.log(2-2)
+console.log(2*2)
+console.log(2**3)  // 2 to the power 3
+console.log(2/2)
+
+let str1 = "hello"
+let str2 = " kunal"
+console.log(str1 + str2)
+
+
+console.log("1" + 2)                // output=> 12
+console.log(1 + "2")                // output=> 12
+console.log("1" + 2 + 3)            // output=> 123
+console.log(1 + "2" + 3)            // output=> 123
+console.log(1 + 2 + "3")            // output=> 33
+console.log(1 + 5 + "2" + 3 + 4)    // output=> 6234
+*/
+
+
+console.log(true)
+console.log(+true)   // these type of code is not recommended to write
+console.log(+"")     // these type of code is not recommended to write
+
+let gameCounter = 100
+++gameCounter
+console.log(gameCounter)

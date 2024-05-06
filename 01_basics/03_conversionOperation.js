@@ -160,3 +160,13 @@ let gameCounter = 100
 ++gameCounter              // value of gameCounter = 101
 console.log(gameCounter++) // output => 101 but gameCounter value 102
 console.log(gameCounter)   // output => 102
+
+let x = 3;
+const y = x++;
+console.log( x , y);
+// x is 4; y is 3
+
+let x2 = 3n;
+const y2 = x2++;
+console.log(x2 , y2);
+// x2 is 4n; y2 is 3n

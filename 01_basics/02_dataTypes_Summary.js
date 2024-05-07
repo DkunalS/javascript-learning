@@ -32,8 +32,37 @@ let myObj = {
 }
 
 const myFunction = function() {
-                                        // typeof of myFunctin is function
+                                        // typeof of myFunction is function
     console.log("Hello World");
 }
 
 console.log(typeof bigIntvalue);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ // Stack and Heap Memory
+
+ // primitive datatype uses the stack memory and non-primitive datatype uses the heap memory
+
+ let name1 = "kunalsahu"
+ let name2 = name1
+
+ console.log(name1);
+ console.log(name2);
+ 
+ name2 = "somisahu"
+ console.log(name1);
+ console.log(name2);
+
+
+ // Non-primitive
+ let user = {
+    name: "kunal",
+    email: "kunal@google.com"
+ }
+
+ let user1 = user
+
+ user1.email = "kunal@gmail.com"
+  console.log(user1.email);
+  console.log(user.email);

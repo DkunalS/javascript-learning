@@ -11,6 +11,7 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
  const indexAndValue = new String("rang-de-basanti")
  const stringFunctions = new String("baar baar dekho")
  const stringFunForTrim = new String("   Andaaz   Apna   Apna   ")
+ let stringOpsForPad = new String("life in a metro")
 
 //  console.log(indexAndValue.charAt(5));      // output=> d
 //  console.log(indexAndValue.charAt(16));     // output=> 
@@ -36,3 +37,11 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
 
  console.log(stringFunctions.split(' '))      // output=> [ 'baar', 'baar', 'dekho' ]
  console.log(indexAndValue.split('-'));       // output=> [ 'rang', 'de', 'basanti' ]
+
+ console.log(indexAndValue.endsWith('ant'));  // output=> false
+ console.log(indexAndValue.endsWith('anti')); // output=> true
+
+ console.log(stringOpsForPad.padEnd(31, ' new'));  // output=> life in a metro new new new new
+ console.log(stringFunctions.padStart(30, 'kyun ')); // output=> kyun kyun kyun baar baar dekho
+
+ 

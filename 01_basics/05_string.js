@@ -18,18 +18,16 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
 //  console.log(indexAndValue.indexOf('h'));   // output=> -1
 //  console.log(indexAndValue.indexOf('b'));   // output=> 8
  console.log(indexAndValue.lastIndexOf('a') ); // output=> 11
-
+ console.log(indexAndValue.lastIndexOf('de'))  // output=> 5
+ console.log(stringFunctions.lastIndexOf('ar')); // output=> 7
 
  console.log(stringFunctions.length);          // output=> 15
  
  console.log(indexAndValue.includes('sa'))     // ouput=> true
 
- console.log(indexAndValue.lastIndexOf('de'))  // output=> 5
- console.log(stringFunctions.lastIndexOf('ar')); // output=> 7
-
  console.log(indexAndValue.substring(2,6));      // output => ng-d
  console.log(indexAndValue.slice(5,10));         // output=> de-ba 
- // Note- it indicate the character upto but not the indicate last index 10 is not included
+ // Note- it indicate the character upto but not the indicate last index 10 is not included in substring and slice
 
  console.log(indexAndValue.trim());           // output=> rang-de-basanti (it works only on whitesapces)
  
@@ -44,4 +42,9 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
  console.log(stringOpsForPad.padEnd(31, ' new'));  // output=> life in a metro new new new new
  console.log(stringFunctions.padStart(30, 'kyun ')); // output=> kyun kyun kyun baar baar dekho
 
- 
+ console.log(stringFunctions.toLowerCase());
+ console.log(stringFunctions.toUpperCase());
+
+ console.log(stringFunctions.replace('baar', 'ek'));  // output=> ek baar dekho
+
+ console.log(stringFunctions.repeat(3));      // output=> baar baar dekhobaar baar dekhobaar baar dekho

@@ -1,9 +1,9 @@
 "use strict" // treat all the JS code as newer version although now all the code is considered as the newer JS code
 
-// alert(3 + 2) // it will work in browser and we are using the nodejs, so it is not running on the browser
+// alert(3 + 2) // it will work in browser and we are using the nodejs, so it is not it is not working
 
 /*
- There are 2 Documentation 1. MDN (it is of mozila)- it simple documentaion which ca be followed
+ There are 2 Documentation 1. MDN (it is of mozila)- it simple documentaion which can be followed
  2.ECMA script https://tc39.es/ecma262/ - To standardize the the JS code because in earlier days everyone had 
  their own standards for JS like different browser and different standards so it was tricky to follow the proper one standard.
  The JS community sit togather and wrote minimum standard for JS code like- how to take input, how functions should be write, etc
@@ -29,9 +29,9 @@
  */
 
 
- console.log(typeof name)
- console.log(typeof age)
- console.log(typeof isAvailble)
+ console.log(typeof name)    // output String
+ console.log(typeof age)     // output number
+ console.log(typeof isAvailble) // output boolean
  console.log(typeof state)  // output undefined
  console.log(typeof undefined)  // output undefined
  console.log(typeof null)  // output object

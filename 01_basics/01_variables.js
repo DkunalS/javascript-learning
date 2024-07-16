@@ -1,11 +1,11 @@
-// It can be used for the getting the data of the user from the website 
+// It can be used for the getting the user data from the website 
 
 
 const accountId = 1235
 let accountEmail = "kunal@google.com"
 var passwd = "123456" 
 /* 
-var was introduced earlier version of JavaScript but it has the issue of block scope functional scope 
+var was introduced earlier version of JavaScript but it has the issue of block scope and functional scope 
 but in latest version there is use of only let to define the variables
 */
 accountCity = "Indore" // this type of variable define not prefered to use although we can define in this way also

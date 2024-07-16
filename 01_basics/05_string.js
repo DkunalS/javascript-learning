@@ -8,7 +8,7 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
 
 // string functions
 
- const indexAndValue = new String("rang-de-basanti")
+ const indexAndValue = new String("rang-de-basanti") 
  const stringFunctions = new String("baar baar dekho")
  const stringFunForTrim = new String("   Andaaz   Apna   Apna   ")
  let stringOpsForPad = new String("life in a metro")

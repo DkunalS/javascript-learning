@@ -1,3 +1,6 @@
+// It can be used for the getting the data of the user from the website 
+
+
 const accountId = 1235
 let accountEmail = "kunal@google.com"
 var passwd = "123456" 

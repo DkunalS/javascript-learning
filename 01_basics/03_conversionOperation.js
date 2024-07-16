@@ -126,8 +126,10 @@ console.log(typeof scoreEmptyToBoolean)              // output => boolean
 console.log(scoreEmptyToBoolean)                     // output => false
 
 */
-// Operations
+ 
 /*
+-------------------------------------------------Operations--------------------------------------------------------------------
+
 let value = 3
 let negValue = -value
 console.log(negValue)
@@ -153,8 +155,9 @@ console.log(1 + 5 + "2" + 3 + 4)    // output=> 6234
 
 
 console.log(true)
-console.log(+true)   // these type of code is not recommended to write
-console.log(+"")     // these type of code is not recommended to write
+console.log(+true)     // it is conversion, output = 1 these type of code is not recommended to write 
+//console.log(true+);  // it will genrate the error
+console.log(+"")       // it is also conversion, output = 0 these type of code is not recommended to write
 
 let gameCounter = 100
 ++gameCounter              // value of gameCounter = 101

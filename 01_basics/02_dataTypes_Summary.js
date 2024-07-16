@@ -56,15 +56,18 @@ console.log("type of myFunction is  "+ typeof myFunction)
 
  // Stack and Heap Memory
 
- // primitive datatype uses the stack memory and non-primitive datatype uses the heap memory
+ // primitive datatype uses the stack memory (we get the copied value)
+ // Non-primitive datatype uses the heap memory (we get the memory reference)
 
+
+ // Primitive
  let name1 = "kunalsahu"
- let name2 = name1
+ let name2 = name1       // copying the value
 
- console.log(name1);
+ console.log(name1);    
  console.log(name2);
  
- name2 = "somisahu"
+ name2 = "somisahu"      // vlaue changing in local variable
  console.log(name1);
  console.log(name2);
 
@@ -75,8 +78,8 @@ console.log("type of myFunction is  "+ typeof myFunction)
     email: "kunal@google.com"
  }
 
- let user1 = user
+ let user1 = user            // memory reference
 
- user1.email = "kunal@gmail.com"
+ user1.email = "kunal@gmail.com"   // changing the value in the memory reference
   console.log(user1.email);
   console.log(user.email);

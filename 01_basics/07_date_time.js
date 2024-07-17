@@ -23,8 +23,17 @@ console.log(curr_date.getMinutes());            // output=> 58
 console.log(curr_date.getMilliseconds());       // output=> 650
 
 
-//-----------------------------------
+//-----------------------------------Set Time------------------------------------
 
+
+let myCreatedDate = new Date(2024, 5, 30);            // YEAR, MONth, DAY (0-JAN, 11-DEC)
+let myCreatedDate1 = new Date(2024, 5, 30, 12, 26);   // YEAR, MONth, DAY (0-JAN, 11-DEC)
+let myCreatedDate2 = new Date('2024-05-30');          // YEAR, MONTH, DAY (0-JAN, 11-DEC)
+
+console.log(myCreatedDate);
+console.log(myCreatedDate.toLocaleString());        // output=> 6/30/2024, 12:00:00 AM
+console.log(myCreatedDate1.toLocaleString());       // output=> 6/30/2024, 12:26:00 PM
+console.log(myCreatedDate2.toLocaleString());       // output=> 5/30/2024, 12:00:00 AM
 
 
 

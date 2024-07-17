@@ -34,7 +34,7 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
 
  console.log(stringFunctions.length);          // output=> 15
  
- console.log(indexAndValue.includes('sa'))     // ouput=> true  asking the questions
+ console.log(indexAndValue.includes('sa'))     // ouput=> true  asking substring exist or not
 
  console.log(indexAndValue.substring(2,6));      // output => ng-d
  console.log(indexAndValue.slice(5,10));         // output=> de-ba 
@@ -48,6 +48,7 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
 
  console.log(stringFunctions.split(' '))      // output=> [ 'baar', 'baar', 'dekho' ]
  console.log(indexAndValue.split('-'));       // output=> [ 'rang', 'de', 'basanti' ]
+ console.log(indexAndValue.split('-', 2));    // output=> [ 'rang', 'de' ]
 
  console.log(indexAndValue.endsWith('ant'));  // output=> false
  console.log(indexAndValue.endsWith('anti')); // output=> true
@@ -61,3 +62,4 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
  console.log(stringFunctions.replace('baar', 'ek'));  // output=> ek baar dekho
 
  console.log(stringFunctions.repeat(3));      // output=> baar baar dekhobaar baar dekhobaar baar dekho
+ console.log(stringFunctions.b);      // output=> baar baar dekhobaar baar dekhobaar baar dekho

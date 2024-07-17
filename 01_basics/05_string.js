@@ -3,7 +3,7 @@ const stream = "political science"
 
 
 console.log("Hello "+ name + " preparing for " + stream); // this type of comncatination is not prefered 
-
+// it is modern way of concatination(also called string interpolation)
 console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${stream} stream`); // now this is pefered
 
 // string functions
@@ -13,17 +13,28 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
  const stringFunForTrim = new String("   Andaaz   Apna   Apna   ")
  let stringOpsForPad = new String("life in a metro")
 
+ console.log(indexAndValue[0]);
+ console.log(indexAndValue.length);
+ console.log(indexAndValue.toUpperCase());
+ console.log(indexAndValue.substring(1, 5));   // output=> ang-  not include last index
+ console.log(indexAndValue.slice(5, 10));      // output=> de-ba  last index not included
+ console.log(indexAndValue.slice(-15, 5));     // output=> rang-  b/c index(0 == -15) start from 0
+
 //  console.log(indexAndValue.charAt(5));      // output=> d
-//  console.log(indexAndValue.charAt(16));     // output=> 
-//  console.log(indexAndValue.indexOf('h'));   // output=> -1
-//  console.log(indexAndValue.indexOf('b'));   // output=> 8
+//  console.log(indexAndValue.charAt(16));     // output=>     b/c 16 index is not found
+//  console.log(indexAndValue.indexOf('h'));   // output=> -1  b/c not found
+//  console.log(indexAndValue.indexOf(' '));   // output=> -1  b/c not found
+
+//  console.log(indexAndValue.indexOf('b'));   // output=> 8   
  console.log(indexAndValue.lastIndexOf('a') ); // output=> 11
  console.log(indexAndValue.lastIndexOf('de'))  // output=> 5
+
+ console.log(stringFunctions.indexOf('ar'));     // output=> 2
  console.log(stringFunctions.lastIndexOf('ar')); // output=> 7
 
  console.log(stringFunctions.length);          // output=> 15
  
- console.log(indexAndValue.includes('sa'))     // ouput=> true
+ console.log(indexAndValue.includes('sa'))     // ouput=> true  asking the questions
 
  console.log(indexAndValue.substring(2,6));      // output => ng-d
  console.log(indexAndValue.slice(5,10));         // output=> de-ba 
@@ -31,7 +42,9 @@ console.log(`Hello! His name is ${name} and he is preparing for UGC NET in ${str
 
  console.log(indexAndValue.trim());           // output=> rang-de-basanti (it works only on whitesapces)
  
- console.log(stringFunForTrim.trim());        // output=> Andaaz   Apna   Apna
+ console.log(stringFunForTrim.trim());        // output=> Andaaz   Apna   Apna (trim removes the starting and ending whitespaces)
+ console.log(stringFunForTrim.trimStart());   // output=> Andaaz   Apna   Apna    (trimStart removes the starting whitespaces)   Apna
+ console.log(stringFunForTrim.trimEnd());     // output=>    Andaaz   Apna   Apna (trimEnd removes the ending whitespaces)   Apna
 
  console.log(stringFunctions.split(' '))      // output=> [ 'baar', 'baar', 'dekho' ]
  console.log(indexAndValue.split('-'));       // output=> [ 'rang', 'de', 'basanti' ]

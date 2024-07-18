@@ -36,9 +36,19 @@ console.log(typeof myArr);            // output=> object
 console.log(typeof arrayAfterJoin);   // output=> string
 
 //-----------slice and splice--------------
-// slice does not include  
-console.log("A", myArr);
+/* slice- It dosed not include range, it include only before mentioned index and it does not change in original array
+   splice- It includes range, it consider metioned index and it changed th original array
+
+*/
+console.log("Original Array ", myArr);              //output=> [ 0, 1, 2, 3, 4, 5, 9 ]
 const myArrAfterSlice = myArr.slice(1, 3)
-console.log(myArrAfterSlice);
+console.log("Sliced array", myArrAfterSlice);      //output=> [ 1, 2 ]
+console.log("Original Array after slice", myArr);  //output=> Original Array after slice [ 0, 1, 2, 3, 4, 5, 9 ]
+
+console.log("Original Array ", myArr);              //output=> [ 0, 1, 2, 3, 4, 5, 9 ]
+const myArrAfterSplice = myArr.splice(1, 3)
+console.log("Spliced array", myArrAfterSplice);      //output=> [ 1, 2, 3 ]
+console.log("Original Array after splice", myArr);  // output=> Original Array after splice [ 0, 4, 5, 9 ]
+
 
 

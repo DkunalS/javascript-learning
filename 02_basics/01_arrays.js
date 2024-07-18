@@ -35,7 +35,7 @@ console.log(arrayAfterJoin);
 console.log(typeof myArr);            // output=> object
 console.log(typeof arrayAfterJoin);   // output=> string
 
-//-----------slice and splice--------------
+//-----------slice and splice--------------(Inertview)
 /* slice- It dosed not include range, it include only before mentioned index and it does not change in original array
    splice- It includes range, it consider metioned index and it changed th original array
 

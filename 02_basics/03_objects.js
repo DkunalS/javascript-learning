@@ -34,6 +34,15 @@ console.log(jsUser);   // typeof this is symbol, it is not refering to the symbo
 
 //Changing the value of object variables nad freezing
 jsUser.name = "jassi"
-Object.freeze(jsUser)   // freezing the object- no value overritten
+//Object.freeze(jsUser)   // freezing the object- no value overritten
 jsUser.name = "manish"  // no overwritten
 console.log(jsUser);
+
+//------------- Adding function into object-----------
+// function considered as variables
+
+jsUser.greeting = function(){
+    console.log("Hello JS user");
+}
+
+console.log(jsUser.greeting());

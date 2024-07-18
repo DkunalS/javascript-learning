@@ -26,3 +26,19 @@ console.log(myArr);
 //shift - remove 0th index element and shift the all element
 myArr.shift();
 console.log(myArr);
+
+console.log(myArr.includes(3));       //Is element included in the array return true/false
+console.log(myArr.indexOf(3));       //index of a perticular element 
+
+const arrayAfterJoin = myArr.join();  // converting array to string 
+console.log(arrayAfterJoin); 
+console.log(typeof myArr);            // output=> object
+console.log(typeof arrayAfterJoin);   // output=> string
+
+//-----------slice and splice--------------
+// slice does not include  
+console.log("A", myArr);
+const myArrAfterSlice = myArr.slice(1, 3)
+console.log(myArrAfterSlice);
+
+

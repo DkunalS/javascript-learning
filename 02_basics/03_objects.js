@@ -15,7 +15,9 @@ const jsUser = {
     [mySymbol]: "key1",    // interview Q - symbol used in [] in object 
     age: "27",
     location: "indore",
-    email: "indore@gmail.com"
+    email: "indore@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Saturday"]
 }
 
 //accessing the object and its values
@@ -28,4 +30,10 @@ console.log(jsUser["email"]); // By this method we can access any type of object
 console.log(jsUser["mySymbol"]);
 console.log(typeof jsUser["mySymbol"]);   // typeof this is string, it is not refering to the symbol
 console.log(jsUser[mySymbol]);
-console.log(typeof jsUser[mySymbol]);   // typeof this is symbol, it is not refering to the symbol
+console.log(jsUser);   // typeof this is symbol, it is not refering to the symbol
+
+//Changing the value of object variables nad freezing
+jsUser.name = "jassi"
+Object.freeze(jsUser)   // freezing the object- no value overritten
+jsUser.name = "manish"  // no overwritten
+console.log(jsUser);

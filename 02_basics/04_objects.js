@@ -6,5 +6,3 @@ constructorObject.id = "123abc"
 constructorObject.name = "saime"
 
 console.log(constructorObject);
-
-const 

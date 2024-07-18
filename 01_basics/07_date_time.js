@@ -23,7 +23,7 @@ console.log(curr_date.getMinutes());            // output=> 58
 console.log(curr_date.getMilliseconds());       // output=> 650
 
 
-//-----------------------------------Set Time------------------------------------
+//-----------------------------------Set Date--------------------------------
 
 
 let myCreatedDate = new Date(2024, 5, 30);            // YEAR, MONth, DAY (0-JAN, 11-DEC)
@@ -35,10 +35,20 @@ console.log(myCreatedDate.toLocaleString());        // output=> 6/30/2024, 12:00
 console.log(myCreatedDate1.toLocaleString());       // output=> 6/30/2024, 12:26:00 PM
 console.log(myCreatedDate2.toLocaleString());       // output=> 5/30/2024, 12:00:00 AM
 
+//-------------------------TimeStamp--------------------------
+// use for the Quizes, Polls, Hotel date booking
 
+let myTimeStamp = Date.now();          //Current time
 
+console.log(myTimeStamp);              
+console.log(myCreatedDate.getTime());  // getting the time in milisecond
 
+console.log(Math.floor(Date.now()/1000));  //Converted from milisecond to second
 
+//--------------------------LocaleString-------------------
 
+let customLocaleString = curr_date.toLocaleString('default',{
+    weekday: "long", timeZoneName: "long", era: "long", year: "numeric"
+} )
 
-
+console.log(customLocaleString);

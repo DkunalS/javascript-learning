@@ -74,3 +74,36 @@ console.log(Object.entries(userObject));  // seperate entries
 
 console.log(userObject.hasOwnProperty('isLoggedIn')); 
 
+
+
+//---------------------------Destructuring--------------------------
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseMode: "Online"
+}
+
+// if we want to call many times course.courseMode- not a good prectice to write may time
+console.log(course.courseMode) 
+
+//so we destructure it so we can call mode inplace of course.courseMode
+const {courseMode : mode} = course
+console.log(mode);
+
+//----------API and object-------------
+// Earlier data and value in the xml format but now used the JSON
+//JSON Format
+/*
+{
+    "userID" : "kunal",
+    "passwd" : "hgchasvs",
+    "email" : "nvhjsbghfs"
+}
+*/
+
+//---------fetch method to get the data from the URL and JSON--------
+/* and convert into it object from array and other format
+    API - randomuser.me (sample response API to analyse)
+    jsonformattter.com - to beautify(format) or analyse the data
+*/

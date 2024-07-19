@@ -27,11 +27,45 @@ const obj3 = {5: "e", 6: "f"}
 //console.log(obj3);  // here same nested object like array had
 //output=> { obj1: { '1': 'a', '2': 'b' }, obj2: { '2': 'd', '3': 'c' } }
 
-const Obj5 = Object.assign(obj1, obj2)  // tsrget- obj1, source- obj2
-console.log(Obj5);
+//const Obj5 = Object.assign(obj1, obj2)  // target- obj1, source- obj2
+//console.log(Obj5);
+//console.log(obj1);  // here object 1 is changing output=> { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-const Obj6 = Object.assign(obj1, obj2, obj3) //target- obj1, sources - obj2, obj3
-console.log(Obj6);
+//const Obj6 = Object.assign(obj1, obj2, obj3) //target- obj1, sources - obj2, obj3
+//console.log(Obj6); 
+//console.log(obj1); //here also obj1 is changing { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
 
 const Obj7 = Object.assign({}, obj1, obj2, obj3) //target- {}, sources - obj1, obj2, obj3
 console.log(Obj7);
+console.log(obj1); //here obj1 is not changing b/c target object is different
+
+//----------- combining of object through spread-----------
+const obj8 = {...obj1, ...obj2, ...obj3}
+console.log(obj8);
+console.log(obj1);   // here obj1 is also not changing
+
+//------------values from database---------------
+// let suppose fetching the data in array object 
+
+const users = [
+    {
+        id: 1,
+        emailId: "user1@user.com"   
+    },
+    {
+        id: 2,
+        emailId: "user2@user.com"
+    },
+    {
+        id: 3,
+        emailId: "user3@user.com"
+    }
+]
+
+//---accesing array object
+users[1].emailId
+
+console.log(userObject);
+console.log(Object.keys(userObject));
+console.log(Object.values(userObject));
+

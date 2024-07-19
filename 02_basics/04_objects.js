@@ -107,3 +107,4 @@ console.log(mode);
     API - randomuser.me (sample response API to analyse)
     jsonformattter.com - to beautify(format) or analyse the data
 */
+

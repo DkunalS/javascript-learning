@@ -66,6 +66,11 @@ const users = [
 users[1].emailId
 
 console.log(userObject);
-console.log(Object.keys(userObject));
-console.log(Object.values(userObject));
+console.log(Object.keys(userObject));     // typeof this is array (we can access by loop) all the key
+console.log(Object.values(userObject));   // typeof this is array (we can access by loop) all the values
+console.log(Object.entries(userObject));  // seperate entries
+
+//------finding property in object-----------
+
+console.log(userObject.hasOwnProperty('isLoggedIn')); 
 

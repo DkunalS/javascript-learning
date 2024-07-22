@@ -38,10 +38,56 @@ if(true){
     let nagu = 65;
     var dj = 20;
     console.log("---within {} local scope--");
-    console.log(nagu);   //output=> 65
-    console.log(dj);     // ouput=> 20
+    console.log(nagu);   //output=> 65   block scope
+    console.log(dj);     //output=> 20
 }
 
 console.log("-----outside of the {}");
 console.log(nagu);  //ouput=> 89
-console.log(dj);    //output=> 20
+console.log(dj);    //output=> 20 (here accessing global scope)
+
+//----Nested scope and clousre----Interview topic---
+// function 
+function one(){
+    const userName = "kunal"
+
+    // child function can access the parent varible
+    function two(){
+        const website = "youtube"
+        console.log(userName)
+    }
+    // console.log(website)  //throwhing error- website is not defined
+    two()  // if we comment this function it will not print the variable userName
+}
+
+// one()
+
+//if/else
+
+if (true){
+    const userName = "kunal"
+    if (userName === "kunal"){
+        const newWebsite = " youtube"
+        console.log(userName + newWebsite);
+    }
+    // console.log(website);   // throwing the error- website is not defined (out if the scope)
+}
+
+// console.log(userName);   // throwing the error- userName is not defined (out if the scope)
+
+
+//----------------- techniques of the functions---------------
+
+// normal function- here we can call the function before initialization
+function addOne(num){
+    return num + 1;
+}
+console.log(addOne(6))
+
+// storing the function in variable- Hoistimg
+
+// console.log(addTwo(5))         // throwing error- Cannot access 'addTwo' before initialization
+const addTwo = function(num){  // because storing the function in variable
+    return num + 2;  
+}
+console.log(addTwo(10))     //here output will be showed

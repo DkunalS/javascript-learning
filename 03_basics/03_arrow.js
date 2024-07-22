@@ -40,8 +40,16 @@ coffee()
 //------------arrow function-------------
 //syntax is  () => {} 
 
-const addTwo = (num1, num2) => {
-    return num1 + num2
-}
+// basic (explicitly return) arrow function
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+
+// implicit return arrow function
+//const addTwo = (num1, num2) =>  num1 + num2
+//const addTwo = (num1, num2) =>  (num1 + num2)  // () used for wrapping, it is widely used in react
+
+// returning object
+const addTwo = (num1, num2) =>  ({userName: "kunal"})  // {} for object and () for wrapping
 
 console.log(addTwo(5, 6));
